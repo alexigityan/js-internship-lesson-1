@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Alex Igityan">
+  <meta name="description" content="Buy, Robot! is the world's first global robot store, offering new robot models, customizable with unique accessories and adjustable personalities to fit any requirement">
+  <meta name="og:image" content="http://url/logo.png">
+  <meta name="og:title" content="Buy, Robot!">  
+  <meta name="og:description" content="Buy, Robot! is the world's first global robot store, offering new robot models, customizable with unique accessories and adjustable personalities to fit any requirement">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Buy, Robot! Request Form</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/">
+      <img class="header__logo" alt="logo" src="logo.png" height="50">
+    </a>
+    <h1 class="header__title">Buy, Robot!</h1>
+  </header>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list__item"><a href="/">Home</a></li>
+      <li class="nav__list__item nav__list__item--active"><a href="/request">Request maintenance</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="request">
+      <h2 class="request__heading">Request Maintenance</h2>
+        <form class="request__form">
+            <p class="request__form__description">
+              In the unlikely event that you notice any strange behaviour in one of our robots, 
+              please fill this form and we will help you out  
+            </p>
+            <div class="request__form__row">
+              <label for="name">Your name: </label>
+              <input required id="name" type="text" placeholder=""/>
+            </div>
+            <div class="request__form__row">
+              <label for="email">Your email address: </label>
+              <input required id="email" type="email" placeholder="" />
+            </div>
+
+            <div class="request__form__row">
+              <label>Cause of worry: </label>
+              <select id="dropdown">
+                <option value="red-eyes">My robot's eyes glow red</option>
+                <option value="death-stare">My robot stares at me while I sleep</option>
+                <option value="family-murder">My robot murdered my family</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="request__form__row">
+              <label>We offer a number of supplementary services, please choose the ones you'd like to order </label>
+              <div class="request__form__row__checks">
+                <div><input type="checkbox" name="service" id="grenade" value="grenade"/><label for="grenade">Grenade Launcher</label></div>
+                <div><input type="checkbox" name="service" id="plasma" value="plasma"/><label for="plasma">Plasma rifle</label></div>
+                <div><input type="checkbox" name="service" id="chuck" value="chuck"/><label for="chuck">Chuck Norris (for one day)</label></div>
+              </div>
+            </div>
+
+
+            <div class="request__form__row">
+              <label>Please choose how urgently you need our assistance</label>
+              <div class="request__form__row__checks">
+                <div><input type="radio" name="urgency" id="asap" value="asap"/><label for="asap"> AS SOON AS POSSIBLE!</label></div>
+                <div><input type="radio" name="urgency" id="right-now" value="right-now"/><label for="right-now">RIGHT NOW!</label></div>
+                <div><input type="radio" name="urgency" id="too-late" value="too-late"/><label for="too-late">AAAAAAARGH....</label></div>
+              </div>
+            </div>
+
+
+            </div>
+            <div class="request__form__row">
+              <label>Please leave your feedback as well as your will and testament in case of your untimely demise</label>
+              <textarea rows="5"></textarea>
+            </div>
+
+            <div class="request__form__row">
+                <input id="submit" type="submit" value="Submit order"/>
+            </div>
+          </form>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <address>116th St & Broadway, New York, NY 10027, United States</address>
+  </footer>
+</body>
+
+</html>

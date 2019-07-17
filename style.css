@@ -1,0 +1,154 @@
+h1 {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.header__logo {
+  margin: 0 1em;
+}
+
+.nav {
+  position:sticky;
+  background-color:white;
+  top:0;
+  border-bottom: 1px solid black;
+}
+
+.nav__list {
+  display:flex;
+  align-items: bottom;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list__item {
+  border-bottom: 1px solid transparent;
+}
+
+
+.nav__list__item--active {
+  font-weight: bolder;
+}
+
+.nav__list__item a {
+  text-decoration: none;
+  color: black;
+}
+
+.info {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.robots {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+.robots__heading {
+  text-align: center;
+}
+
+.robots__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.robot {
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+}
+
+.robot__name {
+  text-align:center;
+}
+
+.robot__info {
+  font-style: italic;
+}
+
+.robot__stats {
+  font-size:0.8em;
+}
+
+.feedbacks {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+.feedbacks__heading {
+  text-align: center;
+}
+
+.feedbacks__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feedback {
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+}
+
+.feedback__content {
+  max-width:280px;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+
+.request__heading {
+  text-align: center;
+}
+
+.request__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.request__form__row {
+  margin-bottom: 1em; 
+  padding-bottom: 1em; 
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+
+.request__form__row label {
+  margin-bottom: 1em;  
+}
+
+@media (min-width: 800px) {
+  .request__form {
+    width: 50%;
+  }
+}
