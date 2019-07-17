@@ -34,11 +34,6 @@ body {
   margin: 0;
 }
 
-.nav__list__item {
-  border-bottom: 1px solid transparent;
-}
-
-
 .nav__list__item--active {
   font-weight: bolder;
 }
