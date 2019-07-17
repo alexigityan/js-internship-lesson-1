@@ -13,3 +13,4 @@ This static website:
   <li>also lacks clear commit messages because i forgot to git init in advance</li>
 </ul>
 
+The website is deployed on <a href="https://buy-robot.glitch.me/" target="_blank">Glitch</a>
